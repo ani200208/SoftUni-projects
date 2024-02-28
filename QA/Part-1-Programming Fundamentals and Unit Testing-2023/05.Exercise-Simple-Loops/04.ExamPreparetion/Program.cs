@@ -6,14 +6,14 @@
         {
             int maxPoorGrades = int.Parse(Console.ReadLine());
 
-            // Initialize variables
+            
             int poorGradesCount = 0;
             int solvedProblemsCount = 0;
             double totalGrade = 0;
             string lastProblem = "";
             bool isFailed = true;
 
-            // Main loop
+            
             while (poorGradesCount < maxPoorGrades)
             {
                 string problemName = Console.ReadLine();
@@ -25,17 +25,17 @@
 
                 int grade = int.Parse(Console.ReadLine());
 
-                // Update total grade and problem count
+                
                 totalGrade += grade;
                 solvedProblemsCount++;
                 lastProblem = problemName;
 
-                // Check if the grade is poor
+                
                 if (grade <= 4)
                     poorGradesCount++;
             }
 
-            // Print output
+            
             if (isFailed)
             {
                 Console.WriteLine($"You need a break, {poorGradesCount} poor grades.");
