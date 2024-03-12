@@ -21,8 +21,8 @@ namespace TestGitHubApi
         [SetUp]
         public void Setup()
         {            
-            client = new GitHubApiClient("https://api.github.com/repos/testnakov/", "your_username", "your_password");
-            repo = "test-nakov-repo"; 
+            client = new GitHubApiClient("https://github.com/ani200208/SoftUni-projects/tree/main/QA", "your_username", "your_password");
+            repo = "ani200208-repo"; 
         }
 
 
